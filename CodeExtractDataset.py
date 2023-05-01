@@ -37,7 +37,6 @@ def get_list_songs(tracks_ids):
             genre = re.sub("\[|\'|\]", "", genre)
         except:
             genre = "Unknown"
-        # AQUÍ TERMINA
         # OBTENCIÓN DE LOS DATOS DEL TEMPO Y POPULARIDAD
         try:
             features = sp.audio_features(uri_track)[0]
